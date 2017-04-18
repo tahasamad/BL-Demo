@@ -10,7 +10,7 @@ Has following features:
 4) Lambda Function pulls file, and update stats in DynamoDB.
 5) User can get stats for a sender.
 
-For details of APIs you can see `BLDemo.json` Exported Postman Collection or below:
+For details of APIs you can see `BLDemo.postman_collection` Exported Postman Collection or below:
 
 ------------------------------------------------------------
 

@@ -1,0 +1,71 @@
+{
+	"variables": [],
+	"info": {
+		"name": "BL-Demo",
+		"_postman_id": "1786cf6f-eca9-e97b-d11e-a4627d69b9dc",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Message",
+			"request": {
+				"url": "http://ec2-35-166-152-114.us-west-2.compute.amazonaws.com/message",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"senderId\": \"1\",\n\t\"message\": \"hello this is a long message\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "create-message",
+			"request": {
+				"url": "http://ec2-35-166-152-114.us-west-2.compute.amazonaws.com/create-message?senderId=1&message=yolo",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"senderId\": \"1\",\n\t\"message\": \"hello\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "sender-message-stats",
+			"request": {
+				"url": "http://ec2-35-166-152-114.us-west-2.compute.amazonaws.com/sender-message-stats/1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"senderId\": \"1\",\n\t\"message\": \"hello\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
