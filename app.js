@@ -5,8 +5,8 @@ const aws = require('aws-sdk');
 const awsCreds = require('./aws_creds.js');
 
 aws.config = new aws.Config({
-  								accessKeyId: awsCreds.accessKeyId
-  								secretAccessKey: awsCreds.secretAccessKey
+  								accessKeyId: awsCreds.accessKeyId,
+  								secretAccessKey: awsCreds.secretAccessKey,
   								region: 'us-west-2'
   							});//TODO:This isn't the best way for keys. May be use env var. But ok for now.
 
