@@ -19,3 +19,5 @@ To access your instance:
 Example:
 
 ssh -i "bl-demo-ec2-pki-1.pem" ubuntu@ec2-35-166-152-114.us-west-2.compute.amazonaws.com
+
+scp -i "bl-demo-ec2-pki-1.pem" ../aws_creds.js ubuntu@ec2-35-166-152-114.us-west-2.compute.amazonaws.com:~/BL-Demo
