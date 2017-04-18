@@ -2,6 +2,8 @@ This app uses:
 Node Packages: hapi.js, joi, aws-sdk, node-uuid
 AWS: EC2, S3 Bucket , Lambda Function, DynamoDB
 
+Deployed at: http://ec2-35-166-152-114.us-west-2.compute.amazonaws.com/
+
 Has following features:
 
 1) Create a message using both GET and POST Methods.
