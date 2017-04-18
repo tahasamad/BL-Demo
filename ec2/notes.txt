@@ -1,0 +1,21 @@
+	
+I would like to connect with
+
+    A standalone SSH client
+    A Java SSH Client directly from my browser (Java required)
+
+To access your instance:
+
+    Open an SSH client. (find out how to connect using PuTTY)
+    Locate your private key file (bl-demo-ec2-pki-1.pem). The wizard automatically detects the key you used to launch the instance.
+    Your key must not be publicly viewable for SSH to work. Use this command if needed:
+
+    chmod 400 bl-demo-ec2-pki-1.pem
+
+    Connect to your instance using its Public DNS:
+
+    ec2-35-166-152-114.us-west-2.compute.amazonaws.com
+
+Example:
+
+ssh -i "bl-demo-ec2-pki-1.pem" ubuntu@ec2-35-166-152-114.us-west-2.compute.amazonaws.com
